@@ -9,6 +9,8 @@ function WSR(input) {
 
     if (time < WR) {
         console.log(`Yes, he succeeded! The new world record is ${time.toFixed(2)} seconds.`)
+    } else {
+        console.log(`No, he failed! He was ${(time - WR).toFixed(2)} seconds slower.`)
     }
 
 }
