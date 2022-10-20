@@ -5,12 +5,12 @@ function lunchBreak(input) {
     
     
      
-     const timecost = episodelong + breaktime*1.8 + breaktime*1.4;
+     const timecost = episodelong + breaktime/8 + breaktime/4;
       
      if (timecost <= breaktime) {
-         console.log(`You have enough time to watch ${serial} and left with ${Math.round(breaktime-timecost)} minutes free time.`)
+         console.log(`You have enough time to watch ${serial} and left with ${Math.ceil(breaktime-timecost)} minutes free time.`)
      } else {
-         console.log(`You don't have enough time to watch ${serial}, you need ${Math.round(timecost-breaktime)} more minutes.`)
+         console.log(`You don't have enough time to watch ${serial}, you need ${Math.ceil(timecost-breaktime)} more minutes.`)
      }
 }
      lunchBreak(["Teen Wolf","48","60"])
